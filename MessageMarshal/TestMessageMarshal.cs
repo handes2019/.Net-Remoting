@@ -7,8 +7,16 @@ namespace MessageMarshal
     /// </summary>
     /*创建发送消息委托*/
     public delegate void SendMessageHandler(string message);
+    [Serializable]
     public class TestMessageMarshal:MarshalByRefObject
     {
+        private Guid ID { get; set; }
+        /*新建对象实例时重新创建标识编号*/
+        public TestMessageMarshal()
+        {
+            ID = Guid.NewGuid();
+        }
+        
         //创建发送消息事件
         public static event SendMessageHandler SendMessageEvent;
         
@@ -18,7 +26,7 @@ namespace MessageMarshal
         {
             if (SendMessageEvent != null)
             {
-                SendMessageEvent(message);
+                SendMessageEvent(ID.ToString()+"\t"+ message);
             }
         }
     }

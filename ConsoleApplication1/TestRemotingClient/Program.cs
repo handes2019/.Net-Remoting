@@ -18,7 +18,7 @@ namespace TestRemotingClient
             /*注册通道*/
             ChannelServices.RegisterChannel(channel, false); 
             /*注册通道 的 远程处理类型*/
-            RemotingConfiguration.RegisterWellKnownClientType(typeof(MessageMarshal.TestMessageMarshal), "http://localhost:816/TestMessageMarshal");  
+            RemotingConfiguration.RegisterWellKnownClientType(typeof(MessageMarshal.TestMessageMarshal), "http://localhost:8226/test");  
             /*创建消息实体*/
             MessageMarshal.TestMessageMarshal TestMessage = new MessageMarshal.TestMessageMarshal();
 

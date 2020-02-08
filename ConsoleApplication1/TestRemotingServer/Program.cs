@@ -18,7 +18,8 @@ namespace TestRemotingServer
             /*注册通道服务端*/
             ChannelServices.RegisterChannel(channel, false);
             /*服务端注册,使用Singletong激活*/
-            RemotingConfiguration.RegisterWellKnownServiceType(typeof(MessageMarshal.TestMessageMarshal), "TestMessageMarshal", WellKnownObjectMode.Singleton);
+            RemotingConfiguration.RegisterWellKnownServiceType(typeof(MessageMarshal.TestMessageMarshal), "test", WellKnownObjectMode.Singleton);
+            Console.WriteLine("started ..."); 
 
             /*接收客户端事件*/
             MessageMarshal.TestMessageMarshal.SendMessageEvent += new MessageMarshal.SendMessageHandler(TestMessageMarshal_SendMessageEvent);
