@@ -1,0 +1,5 @@
+D:\Code\.Net-Remoting\MessageMarshal\bin\Debug\MessageMarshal.dll
+D:\Code\.Net-Remoting\MessageMarshal\bin\Debug\MessageMarshal.pdb
+D:\Code\.Net-Remoting\MessageMarshal\obj\Debug\MessageMarshal.csprojAssemblyReference.cache
+D:\Code\.Net-Remoting\MessageMarshal\obj\Debug\MessageMarshal.dll
+D:\Code\.Net-Remoting\MessageMarshal\obj\Debug\MessageMarshal.pdb

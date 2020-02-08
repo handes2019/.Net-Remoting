@@ -5,11 +5,11 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{EE9CB985-B15C-4198-82A1-4E134AE3850D}</ProjectGuid>
+        <ProjectGuid>{C1765FE4-3C60-49BB-82E4-8E76854E4293}</ProjectGuid>
         <OutputType>Exe</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>ConsoleApplication1</RootNamespace>
-        <AssemblyName>ConsoleApplication1</AssemblyName>
+        <RootNamespace>TestRemotingClient</RootNamespace>
+        <AssemblyName>TestRemotingClient</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
