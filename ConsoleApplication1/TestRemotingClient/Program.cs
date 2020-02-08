@@ -2,6 +2,8 @@
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Http;
+using System.Runtime.Remoting.Channels.Ipc;
+using System.Runtime.Remoting.Channels.Tcp;
 using System.Threading;
 
 namespace TestRemotingClient
@@ -14,11 +16,17 @@ namespace TestRemotingClient
         public static void Main(string[] args)
         {
             /*创建通道*/
-            HttpChannel channel = new HttpChannel();
+            //IpcChannel channel = new IpcChannel();
+            //HttpChannel channel_http = new HttpChannel();
+            TcpChannel channel_tcp = new TcpChannel();
             /*注册通道*/
-            ChannelServices.RegisterChannel(channel, false); 
+            ChannelServices.RegisterChannel(channel_tcp, false); 
             /*注册通道 的 远程处理类型*/
-            RemotingConfiguration.RegisterWellKnownClientType(typeof(MessageMarshal.TestMessageMarshal), "http://localhost:8226/test");  
+            //RemotingConfiguration.RegisterWellKnownClientType(typeof(MessageMarshal.TestMessageMarshal), "http://localhost:8226/test");  
+            /*注册通道 的 远程处理类型*/
+            //RemotingConfiguration.RegisterActivatedClientType(typeof(MessageMarshal.TestMessageMarshal), "http://localhost:8226/test");
+            //RemotingConfiguration.RegisterActivatedClientType(typeof(MessageMarshal.TestMessageMarshal), "ipc://localhost:8226/test");
+            RemotingConfiguration.RegisterActivatedClientType(typeof(MessageMarshal.TestMessageMarshal), "tcp://localhost:8226/test");
             /*创建消息实体*/
             MessageMarshal.TestMessageMarshal TestMessage = new MessageMarshal.TestMessageMarshal();
 
