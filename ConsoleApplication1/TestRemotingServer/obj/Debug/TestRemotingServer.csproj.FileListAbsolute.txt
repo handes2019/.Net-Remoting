@@ -1,0 +1,8 @@
+D:\Code\.Net-Remoting\ConsoleApplication1\TestRemotingServer\bin\Debug\TestRemotingServer.exe
+D:\Code\.Net-Remoting\ConsoleApplication1\TestRemotingServer\bin\Debug\TestRemotingServer.pdb
+D:\Code\.Net-Remoting\ConsoleApplication1\TestRemotingServer\bin\Debug\MessageMarshal.dll
+D:\Code\.Net-Remoting\ConsoleApplication1\TestRemotingServer\bin\Debug\MessageMarshal.pdb
+D:\Code\.Net-Remoting\ConsoleApplication1\TestRemotingServer\obj\Debug\TestRemotingServer.csprojAssemblyReference.cache
+D:\Code\.Net-Remoting\ConsoleApplication1\TestRemotingServer\obj\Debug\TestRemotingServer.csproj.CopyComplete
+D:\Code\.Net-Remoting\ConsoleApplication1\TestRemotingServer\obj\Debug\TestRemotingServer.exe
+D:\Code\.Net-Remoting\ConsoleApplication1\TestRemotingServer\obj\Debug\TestRemotingServer.pdb
